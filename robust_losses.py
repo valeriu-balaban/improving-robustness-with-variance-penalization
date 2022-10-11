@@ -886,7 +886,7 @@ class DistributionalVariancePenalization(nn.Module):
         self.max_iter = max_iter
 
 
-    def best_response(self, v):
+    def findQ(self, v):
         m = v.shape[0]
         size = self.lmbda ** 2
         size *= v.var().pow(2*self.gamma-1)
@@ -954,6 +954,6 @@ class DistributionalVariancePenalization(nn.Module):
 
         else:
             with torch.no_grad():
-                self.prob = self.best_response(v)
+                self.prob = self.findQ(v)
 
             return torch.dot(self.prob, v)
