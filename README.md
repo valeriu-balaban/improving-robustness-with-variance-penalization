@@ -6,6 +6,6 @@ The easiest way to get started using this code is by running [this Colab noteboo
 
 ## Distributional Variance Penalization (FindQ)
 
-Python implementation of the [FindQ procedure](https://github.com/valeriu-balaban/improving-robustness-with-variance-penalization/blob/07e0f3b8b530c3bada698a9da6e4defea7890507/robust_losses.py#L889) extends the one of [Daniel Levy](https://github.com/daniellevy/fast-dro) so it can also be used for variance maximization.
+Current Python implementation of the [FindQ procedure](https://github.com/valeriu-balaban/improving-robustness-with-variance-penalization/blob/07e0f3b8b530c3bada698a9da6e4defea7890507/robust_losses.py#L889) extends the one of [Daniel Levy](https://github.com/daniellevy/fast-dro) so it can also be used for variance maximization.
 
 
