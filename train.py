@@ -31,7 +31,6 @@ def train(params:Dict):
   trainer = pl.Trainer(
     gpus=1,
     max_epochs=config["max_epochs"],
-    progress_bar_refresh_rate=100,
     logger=[WandbLogger()]
   )
 
